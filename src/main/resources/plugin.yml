@@ -1,0 +1,19 @@
+name: SimpleTPA
+version: '1.0-SNAPSHOT'
+main: com.simpletpa.SimpleTpaPlugin
+api-version: '1.21'
+description: Simple teleport request plugin.
+author: esshw
+commands:
+  tpa:
+    description: Request to teleport to another player.
+    usage: /tpa <player>
+  tpaccept:
+    description: Accept a pending teleport request.
+    usage: /tpaccept
+  tpdeny:
+    description: Deny a pending teleport request.
+    usage: /tpdeny
+  help:
+    description: Show SimpleTPA help.
+    usage: /help
