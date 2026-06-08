@@ -14,6 +14,6 @@ commands:
   tpdeny:
     description: Deny a pending teleport request.
     usage: /tpdeny
-  help:
+  simpletpa:
     description: Show SimpleTPA help.
-    usage: /help
+    usage: /simpletpa

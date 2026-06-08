@@ -35,4 +35,8 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>SimpleTPA-Spigot</finalName>
+    </build>
+
 </project>

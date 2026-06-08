@@ -10,7 +10,6 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
@@ -32,7 +31,7 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
         registerCommand("tpa");
         registerCommand("tpaccept");
         registerCommand("tpdeny");
-        registerCommand("help");
+        registerCommand("simpletpa");
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
@@ -52,7 +51,7 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
             case "tpa" -> handleTpa(sender, args);
             case "tpaccept" -> handleTpAccept(sender);
             case "tpdeny" -> handleTpDeny(sender);
-            case "help" -> handleHelp(sender);
+            case "simpletpa" -> handleHelp(sender);
             default -> false;
         };
     }
@@ -187,16 +186,6 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
             request.expiryTask.cancel();
         }
         return request;
-    }
-
-    @EventHandler
-    public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event) {
-        if (!event.getMessage().equalsIgnoreCase("/help")) {
-            return;
-        }
-
-        event.setCancelled(true);
-        handleHelp(event.getPlayer());
     }
 
     @EventHandler
