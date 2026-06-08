@@ -1,6 +1,6 @@
-# SimpleTPA
+# EasyTPA
 
-SimpleTPA is a lightweight server-side teleport request plugin for CraftBukkit, Spigot, Paper, and compatible forks.
+EasyTPA is a lightweight server-side teleport request plugin for CraftBukkit, Spigot, Paper, and compatible forks.
 
 It adds a small `/tpa` system for servers that want simple player-to-player teleport requests without extra configuration or heavy features.
 
@@ -20,7 +20,7 @@ It adds a small `/tpa` system for servers that want simple player-to-player tele
 | `/tpa <player>` | Request to teleport to another player. |
 | `/tpaccept` | Accept your pending teleport request. |
 | `/tpdeny` | Deny your pending teleport request. |
-| `/simpletpa` | Show the plugin help message. |
+| `/easytpa` | Show the plugin help message. |
 
 ## How It Works
 
@@ -37,12 +37,12 @@ If the target runs `/tpaccept`, the requester is teleported to them. If they run
 
 ## Installation
 
-1. Download `SimpleTPA-Spigot.jar`.
+1. Download `EasyTPA-Spigot.jar`.
 2. Stop your server.
 3. Put the jar file into your server's `plugins` folder.
 4. Start the server.
-5. Run `/simpletpa` in-game to check the available commands.
+5. Run `/easytpa` in-game to check the available commands.
 
 ## Notes
 
-SimpleTPA is intentionally minimal. It does not include cooldowns, permissions, economy support, cross-server teleporting, or configuration files.
+EasyTPA is intentionally minimal. It does not include cooldowns, permissions, economy support, cross-server teleporting, or configuration files.

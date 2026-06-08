@@ -1,6 +1,6 @@
-name: SimpleTPA
+name: EasyTPA
 version: '1.0-SNAPSHOT'
-main: com.simpletpa.SimpleTpaPlugin
+main: com.easytpa.EasyTpaPlugin
 api-version: '1.21'
 description: Simple teleport request plugin.
 author: esshw
@@ -14,6 +14,6 @@ commands:
   tpdeny:
     description: Deny a pending teleport request.
     usage: /tpdeny
-  simpletpa:
-    description: Show SimpleTPA help.
-    usage: /simpletpa
+  easytpa:
+    description: Show EasyTPA help.
+    usage: /easytpa

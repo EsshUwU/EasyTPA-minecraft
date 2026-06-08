@@ -1,4 +1,4 @@
-package com.simpletpa;
+package com.easytpa;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -21,7 +21,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
-public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor, TabCompleter, Listener {
+public final class EasyTpaPlugin extends JavaPlugin implements CommandExecutor, TabCompleter, Listener {
     private static final long REQUEST_TIMEOUT_TICKS = 20L * 10L;
 
     private final Map<UUID, TeleportRequest> requestsByTarget = new HashMap<>();
@@ -31,7 +31,7 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
         registerCommand("tpa");
         registerCommand("tpaccept");
         registerCommand("tpdeny");
-        registerCommand("simpletpa");
+        registerCommand("easytpa");
         Bukkit.getPluginManager().registerEvents(this, this);
     }
 
@@ -51,7 +51,7 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
             case "tpa" -> handleTpa(sender, args);
             case "tpaccept" -> handleTpAccept(sender);
             case "tpdeny" -> handleTpDeny(sender);
-            case "simpletpa" -> handleHelp(sender);
+            case "easytpa" -> handleHelp(sender);
             default -> false;
         };
     }
@@ -155,7 +155,7 @@ public final class SimpleTpaPlugin extends JavaPlugin implements CommandExecutor
     }
 
     private boolean handleHelp(CommandSender sender) {
-        sender.sendMessage(ChatColor.GOLD + "SimpleTPA commands:");
+        sender.sendMessage(ChatColor.GOLD + "EasyTPA commands:");
         sender.sendMessage(ChatColor.YELLOW + "/tpa <player>" + ChatColor.WHITE + " - Request to teleport to a player.");
         sender.sendMessage(ChatColor.YELLOW + "/tpaccept" + ChatColor.WHITE + " - Accept your pending teleport request.");
         sender.sendMessage(ChatColor.YELLOW + "/tpdeny" + ChatColor.WHITE + " - Deny your pending teleport request.");
