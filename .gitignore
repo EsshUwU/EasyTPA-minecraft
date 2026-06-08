@@ -40,3 +40,6 @@ build/
 
 ### Agent ###
 INSTRUCTIONS.md
+
+### IntelliJ project files ###
+.idea/
