@@ -42,7 +42,3 @@ If the target runs `/tpaccept`, the requester is teleported to them. If they run
 3. Put the jar file into your server's `plugins` folder.
 4. Start the server.
 5. Run `/easytpa` in-game to check the available commands.
-
-## Notes
-
-EasyTPA is intentionally minimal. It does not include cooldowns, permissions, economy support, cross-server teleporting, or configuration files.
